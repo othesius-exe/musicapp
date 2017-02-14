@@ -4,43 +4,48 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.musicapp.MainActivity">
 
     <LinearLayout
         android:id="@+id/menu_bar_icons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
 
         <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
             android:src="@drawable/home"
+            android:tint="@color/icon_color"/>
+
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingBottom="10dp"/>
-
-        <ImageView
+            android:paddingBottom="10dp"
             android:src="@drawable/library"
+            android:tint="@color/icon_color"/>
+
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingBottom="10dp"/>
-
-        <ImageView
+            android:paddingBottom="10dp"
             android:src="@drawable/radio"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingBottom="10dp"/>
+            android:tint="@color/icon_color"/>
 
 
         <ImageView
-            android:src="@drawable/store"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingBottom="10dp"/>
+            android:paddingBottom="10dp"
+            android:src="@drawable/store"
+            android:tint="@color/icon_color"/>
 
     </LinearLayout>
 
@@ -48,8 +53,9 @@
         android:id="@+id/menu_bar_descriptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/menu_bar_icons">
+        android:layout_below="@id/menu_bar_icons"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
 
 
         <TextView
@@ -72,22 +78,97 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/radio_button"/>
+            android:text="@string/radio_button" />
 
         <TextView
             style="@style/menu_bar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/store_button"/>
+            android:text="@string/store_button" />
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/menu_divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/menu_bar_descriptions"
-        android:background="#000000"
-        android:layout_marginTop="2dp">
-    </TextView>
+        android:layout_marginBottom="15dp"
+        android:background="@color/divider_color"/>
+
+    <TextView
+        android:id="@+id/artist_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_divider"
+        android:text="@string/current_artist"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:src="@drawable/pokemon"
+        android:id="@+id/album_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/artist_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/song_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_view"
+        android:text="@string/current_song"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/control_border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/control_panel"
+        android:layout_marginTop="25dp"
+        android:background="@color/divider_color"/>
+
+    <LinearLayout
+        android:id="@+id/control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:src="@drawable/rewind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tint="@color/icon_color"/>
+
+        <ImageView
+            android:src="@drawable/play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tint="@color/icon_color"/>
+
+        <ImageView
+            android:src="@drawable/fast_forward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:tint="@color/icon_color"/>
+
+    </LinearLayout>
+
 </RelativeLayout>

@@ -8,7 +8,8 @@
     <string name="home_button">Home</string>
 
     <!-- Main activity strings-->
-
+    <string name="current_artist">Caleb and the Pocket Monsters</string>
+    <string name="current_song">I\'m Already the Best</string>
 
     <!-- Radio activity strings -->
 
