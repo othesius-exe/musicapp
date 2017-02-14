@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+
+    <!-- Menu bar strings -->
+    <string name="library_button">Library</string>
+    <string name="radio_button">Radio</string>
+    <string name="store_button">Store</string>
+    <string name="home_button">Home</string>
+
+    <!-- Main activity strings-->
+
+
+    <!-- Radio activity strings -->
+
+
+    <!-- Store activity strings -->
+
+
+    <!-- Library activity strings -->
+
+</resources>
