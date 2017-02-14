@@ -15,7 +15,6 @@
         android:background="@color/colorPrimary">
 
         <ImageView
-            android:id="@+id/home"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -24,7 +23,6 @@
             android:tint="@color/icon_color"/>
 
         <ImageView
-            android:id="@+id/library"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -33,7 +31,6 @@
             android:tint="@color/icon_color"/>
 
         <ImageView
-            android:id="@+id/radio"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -43,7 +40,6 @@
 
 
         <ImageView
-            android:id="@+id/store"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

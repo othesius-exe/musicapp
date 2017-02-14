@@ -17,4 +17,14 @@
         <item name="android:textColor">@color/icon_color</item>
     </style>
 
+    <!-- Library page styles -->
+    <style name="library_page">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+    </style>
+
 </resources>

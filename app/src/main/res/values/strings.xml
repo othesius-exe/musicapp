@@ -18,5 +18,10 @@
 
 
     <!-- Library activity strings -->
-
+    <string name="artists">Artists</string>
+    <string name="songs">Songs</string>
+    <string name="albums">Albums</string>
+    <string name="playlists">Playlists</string>
+    <string name="genres">Genres</string>
+    <string name="now_playing">Nothing Currently Playing</string>
 </resources>
