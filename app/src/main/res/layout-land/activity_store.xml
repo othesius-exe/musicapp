@@ -109,4 +109,14 @@
         android:layout_below="@id/menu_bar_descriptions"
         android:layout_marginBottom="15dp"
         android:background="@color/divider_color"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/primaryText"
+        android:layout_below="@id/menu_divider"
+        android:id="@+id/about_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store_text"
+        android:scrollbars="vertical"/>
 </RelativeLayout>

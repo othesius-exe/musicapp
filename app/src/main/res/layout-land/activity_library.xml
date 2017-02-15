@@ -111,9 +111,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/now_playing_view"
         android:layout_below="@id/menu_divider"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="50dp"
         android:orientation="vertical">
 
         <TextView
@@ -153,20 +154,29 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/now_playing_view"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_alignParentBottom="true">
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:textAlignment="gravity">
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="30dp"
-            android:src="@drawable/pokemon"/>
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/pokemon" />
 
         <TextView
             style="@style/library_page"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryLight"
-            android:text="@string/current_artist" />
+            android:layout_marginTop="10dp"
+            android:text="@string/current_artist"
+            android:textAlignment="center" />
     </LinearLayout>
 </RelativeLayout>

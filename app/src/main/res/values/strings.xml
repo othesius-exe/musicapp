@@ -21,11 +21,23 @@
     <string name="current_song">I\'m Already the Best</string>
 
     <!-- Radio activity strings -->
+    <string name="radio_text">
+        <![CDATA[
+        <p>There are a lot of technical hurdles to implementing a radio function. <br/> <br/>
+        In order to do so, you need a server where music would be hosted for users to search from.
+        You could use Amazon for this option. <br/>
+        I also learned you could stream using Spotify and Soundcloud provided SDK and API\'s.<br/><br/>
+        You also need to request proper permissions for the device to use the internet.
+        </p>]]>
+    </string>
 
-
-    <!-- Store activity strings -->
-
-
+    <!-- Store strings -->
+    <string name="store_text">
+        <![CDATA[<p>Adding a store requires more activities, and billing functionality. As I mentioned in the about page
+        I will be looking into two different ways of doing this. The Android Pay API and Android In-App Billing SDK.<br/><br/>
+        Another difficulty of the store will be creating a place the user can shop for music.
+        </p>]]>
+    </string>
     <!-- Library activity strings -->
     <string name="artists">Artists</string>
     <string name="songs">Songs</string>
@@ -33,4 +45,32 @@
     <string name="playlists">Playlists</string>
     <string name="genres">Genres</string>
     <string name="now_playing">Nothing Currently Playing</string>
+
+    <!-- Settings text -->
+    <string name="settings_text">
+        <![CDATA[<p> The settings page would include options to manage subscriptions, payment methods etc.</p>
+        ]]>
+    </string>
+
+    <!-- About Text -->
+    <string name="about_text">
+      <![CDATA[
+        Author: Caleb Imler<br/><br/> <p>MusicPlayer is a project for Udacity/Google\'s Android Developer Nanodegree program. <br/><br/>
+        Things not yet included in the app: Audio playback functionality, radio functionality, payment processing, importing music etc. <br/><br/>
+         In order to add media player functionality, I will be researching the MediaPlayer API, which can be used for stored music, and streaming. <br/><br/>
+         For processing payment I will be looking into the Android Pay API or the Android In-App Billing SDK. <br/> <br/>
+         The library, Radio and Settings pages are incomplete.<br/><br/>
+         In the Library, I plan to make each TextView link to a page that organises the user\'s music appropriately. From the artists page, if you select
+         an artist, it will bring up all of their albums, if you have multiple to choose from. If you select the songs TextView, it will take the user
+         to a page of all songs, listed alphabetically by song title. I will follow that pattern for the other views. <br/><br/>
+         The Radio Activity, if I choose to keep it and implement the functionality, would have a search function for finding music from an external
+         database, or host my own server, in which case I would have to get licensing to share my music.
+         Similar to other apps of this type, it would allow you to create stations based on an artist/song/genre/etc.<br><br/>
+         Within the Store Activity, users would be able to search for music. The home screen would display currently trending and new music.
+         I may also consider learning to integrate location data and display music that is popular in the user\'s area.<br/><br/>
+         Finally, under the settings menu, I would include settings for account subscriptions, payment methods, storage options etc.<br/><br/>
+         I hope that my intentions with the app are clear, and navigating it is simple. I feel like I could easily get carried away with this project,
+         trying to make a fully functional app. It has been a learning process figuring out how to incorporate a toolbar and menu as well.
+         </p>]]>
+    </string>
 </resources>

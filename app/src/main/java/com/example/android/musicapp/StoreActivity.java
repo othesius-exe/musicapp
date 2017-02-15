@@ -3,11 +3,13 @@ package com.example.android.musicapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class StoreActivity extends AppCompatActivity {
 
@@ -51,6 +53,9 @@ public class StoreActivity extends AppCompatActivity {
                 startActivity(goRadio);
             }
         });
+
+        TextView aboutText = (TextView) findViewById(R.id.about_store);
+        aboutText.setText(Html.fromHtml(getString(R.string.store_text)));
     }
 
     // Menu functions
@@ -60,6 +65,7 @@ public class StoreActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
+
     // Click events for each menu item
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

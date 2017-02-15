@@ -10,9 +10,9 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:minHeight="?attr/actionBarSize"
         android:elevation="4dp"
-        android:theme="@style/action_bar"/>
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/action_bar" />
 
     <LinearLayout
         android:id="@+id/menu_bar_icons"

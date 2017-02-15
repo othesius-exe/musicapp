@@ -10,18 +10,18 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:minHeight="?attr/actionBarSize"
         android:elevation="4dp"
-        android:theme="@style/action_bar"/>
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/action_bar" />
 
     <LinearLayout
         android:id="@+id/menu_bar_icons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
-        android:paddingTop="10dp"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal"
-        android:background="@color/colorPrimary">
+        android:paddingTop="10dp">
 
         <ImageView
             android:id="@+id/home"
@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/home"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
         <ImageView
             android:id="@+id/library"
@@ -39,7 +39,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/library"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
         <ImageView
             android:id="@+id/radio"
@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/radio"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
 
         <ImageView
@@ -58,7 +58,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/store"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
     </LinearLayout>
 
@@ -108,6 +108,15 @@
         android:layout_height="1dp"
         android:layout_below="@id/menu_bar_descriptions"
         android:layout_marginBottom="15dp"
-        android:background="@color/divider_color"/>
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/about_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_divider"
+        android:text="@string/radio_text"
+        android:textColor="@color/primaryText"
+        android:textSize="18sp" />
 
 </RelativeLayout>
