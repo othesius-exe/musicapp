@@ -1,8 +1,8 @@
 package com.example.android.musicapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -12,10 +12,10 @@ public class RadioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_radio);
-
         // Declare ImageView for NavBar
         ImageView homeButton = (ImageView) findViewById(R.id.home);
         ImageView libraryButton = (ImageView) findViewById(R.id.library);
+        ImageView radioButton = (ImageView) findViewById(R.id.radio);
         ImageView storeButton = (ImageView) findViewById(R.id.store);
 
         // Set onClickListeners for NavBar icons
@@ -33,6 +33,14 @@ public class RadioActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goLibrary = new Intent(RadioActivity.this, LibraryActivity.class);
                 startActivity(goLibrary);
+            }
+        });
+
+        radioButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goRadio = new Intent(RadioActivity.this, StoreActivity.class);
+                startActivity(goRadio);
             }
         });
 
