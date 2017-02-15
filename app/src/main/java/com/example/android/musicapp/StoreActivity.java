@@ -73,6 +73,9 @@ public class StoreActivity extends AppCompatActivity {
                 Intent settingsPage = new Intent(StoreActivity.this, SettingsActivity.class);
                 startActivity(settingsPage);
                 break;
+            case R.id.home:
+                Intent homePage = new Intent(StoreActivity.this, MainActivity.class);
+                startActivity(homePage);
             default:
                 return super.onOptionsItemSelected(item);
         }

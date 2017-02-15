@@ -39,6 +39,9 @@ public class SettingsActivity extends AppCompatActivity {
                 Intent settingsPage = new Intent(SettingsActivity.this, SettingsActivity.class);
                 startActivity(settingsPage);
                 break;
+            case R.id.home:
+                Intent homePage = new Intent(SettingsActivity.this, MainActivity.class);
+                startActivity(homePage);
             default:
                 return super.onOptionsItemSelected(item);
         }

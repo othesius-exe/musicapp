@@ -74,6 +74,9 @@ public class LibraryActivity extends AppCompatActivity {
                 Intent settingsPage = new Intent(LibraryActivity.this, SettingsActivity.class);
                 startActivity(settingsPage);
                 break;
+            case R.id.home:
+                Intent homePage = new Intent(LibraryActivity.this, MainActivity.class);
+                startActivity(homePage);
             default:
                 return super.onOptionsItemSelected(item);
         }

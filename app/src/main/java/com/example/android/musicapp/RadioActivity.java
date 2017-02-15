@@ -73,6 +73,9 @@ public class RadioActivity extends AppCompatActivity {
                 Intent settingsPage = new Intent(RadioActivity.this, SettingsActivity.class);
                 startActivity(settingsPage);
                 break;
+            case R.id.home:
+                Intent homePage = new Intent(RadioActivity.this, MainActivity.class);
+                startActivity(homePage);
             default:
                 return super.onOptionsItemSelected(item);
         }

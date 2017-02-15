@@ -10,18 +10,18 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:minHeight="?attr/actionBarSize"
         android:elevation="4dp"
-        android:theme="@style/action_bar"/>
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/action_bar" />
 
     <LinearLayout
         android:id="@+id/menu_bar_icons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
-        android:paddingTop="10dp"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal"
-        android:background="@color/colorPrimary">
+        android:paddingTop="10dp">
 
         <ImageView
             android:id="@+id/home"
@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/home"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
         <ImageView
             android:id="@+id/library"
@@ -39,7 +39,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/library"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
         <ImageView
             android:id="@+id/radio"
@@ -48,7 +48,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/radio"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
 
         <ImageView
@@ -58,7 +58,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/store"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
     </LinearLayout>
 
@@ -107,49 +107,66 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/menu_bar_descriptions"
-        android:background="@color/divider_color"/>
+        android:background="@color/divider_color" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_below="@id/menu_divider">
+        android:layout_below="@id/menu_divider"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
 
         <TextView
             style="@style/library_page"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/artists"/>
+            android:text="@string/artists" />
+
         <TextView
             style="@style/library_page"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/albums"/>
+            android:text="@string/albums" />
+
         <TextView
             style="@style/library_page"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/songs"/>
+            android:text="@string/songs" />
+
         <TextView
             style="@style/library_page"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/playlists"/>
+            android:text="@string/playlists" />
+
         <TextView
             style="@style/library_page"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/genres"/>
+            android:text="@string/genres" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pokemon"/>
+
         <TextView
             style="@style/library_page"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".5"
-            android:text="@string/now_playing"/>
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryLight"
+            android:text="@string/current_artist" />
     </LinearLayout>
 </RelativeLayout>

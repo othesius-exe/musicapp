@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
+
     // Click events for each menu item
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -73,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent settingsPage = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(settingsPage);
                 break;
+            case R.id.home:
+                Intent homePage = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(homePage);
             default:
                 return super.onOptionsItemSelected(item);
         }
