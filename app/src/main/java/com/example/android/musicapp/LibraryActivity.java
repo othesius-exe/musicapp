@@ -15,7 +15,6 @@ public class LibraryActivity extends AppCompatActivity {
 
         // Declare ImageView for NavBar
         ImageView homeButton = (ImageView) findViewById(R.id.home);
-        ImageView libraryButton = (ImageView) findViewById(R.id.library);
         ImageView radioButton = (ImageView) findViewById(R.id.radio);
         ImageView storeButton = (ImageView) findViewById(R.id.store);
 
@@ -26,14 +25,6 @@ public class LibraryActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goHome = new Intent(LibraryActivity.this, MainActivity.class);
                 startActivity(goHome);
-            }
-        });
-
-        libraryButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent goLibrary = new Intent(LibraryActivity.this, LibraryActivity.class);
-                startActivity(goLibrary);
             }
         });
 

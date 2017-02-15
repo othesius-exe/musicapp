@@ -153,6 +153,7 @@
         android:background="@color/colorPrimary">
 
         <ImageView
+            android:id="@+id/rewind_button"
             android:src="@drawable/rewind"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -160,6 +161,7 @@
             android:tint="@color/icon_color"/>
 
         <ImageView
+            android:id="@+id/play_button"
             android:src="@drawable/play"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -167,6 +169,7 @@
             android:tint="@color/icon_color"/>
 
         <ImageView
+            android:id="@+id/fast_forward_button"
             android:src="@drawable/fast_forward"
             android:layout_width="0dp"
             android:layout_height="match_parent"

@@ -14,20 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Declare ImageView for NavBar
-        ImageView homeButton = (ImageView) findViewById(R.id.home);
         ImageView libraryButton = (ImageView) findViewById(R.id.library);
         ImageView radioButton = (ImageView) findViewById(R.id.radio);
         ImageView storeButton = (ImageView) findViewById(R.id.store);
 
         // Set onClickListeners for NavBar icons
-
-        homeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent goHome = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(goHome);
-            }
-        });
 
         libraryButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,5 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(goStore);
             }
         });
+    }
+
+    public void playOrPause(View view) {
+        ImageView playButton = (ImageView) findViewById(R.id.play_button);
+        if (playButton.getDrawable().equals("@drawable/play")) {
+
+        }
     }
 }

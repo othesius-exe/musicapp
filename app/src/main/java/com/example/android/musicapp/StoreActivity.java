@@ -16,7 +16,6 @@ public class StoreActivity extends AppCompatActivity {
         ImageView homeButton = (ImageView) findViewById(R.id.home);
         ImageView libraryButton = (ImageView) findViewById(R.id.library);
         ImageView radioButton = (ImageView) findViewById(R.id.radio);
-        ImageView storeButton = (ImageView) findViewById(R.id.store);
 
         // Set onClickListeners for NavBar icons
 
@@ -41,14 +40,6 @@ public class StoreActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goRadio = new Intent(StoreActivity.this, StoreActivity.class);
                 startActivity(goRadio);
-            }
-        });
-
-        storeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent goStore = new Intent(StoreActivity.this, StoreActivity.class);
-                startActivity(goStore);
             }
         });
     }
