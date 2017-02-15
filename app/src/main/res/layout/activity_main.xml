@@ -6,13 +6,22 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.musicapp.MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/action_bar"/>
+
     <LinearLayout
         android:id="@+id/menu_bar_icons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal"
-        android:background="@color/colorPrimary">
+        android:paddingTop="10dp">
 
         <ImageView
             android:id="@+id/home"
@@ -21,7 +30,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/home"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
         <ImageView
             android:id="@+id/library"
@@ -30,7 +39,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/library"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
         <ImageView
             android:id="@+id/radio"
@@ -39,7 +48,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/radio"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
 
         <ImageView
@@ -49,7 +58,7 @@
             android:layout_weight="1"
             android:paddingBottom="10dp"
             android:src="@drawable/store"
-            android:tint="@color/icon_color"/>
+            android:tint="@color/icon_color" />
 
     </LinearLayout>
 
@@ -99,41 +108,41 @@
         android:layout_height="1dp"
         android:layout_below="@id/menu_bar_descriptions"
         android:layout_marginBottom="15dp"
-        android:background="@color/divider_color"/>
+        android:background="@color/divider_color" />
 
     <TextView
         android:id="@+id/artist_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/menu_divider"
-        android:text="@string/current_artist"
-        android:textSize="20sp"
-        android:textColor="#000"
-        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
         android:fontFamily="serif"
         android:padding="5dp"
-        android:layout_marginBottom="10dp"/>
+        android:text="@string/current_artist"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
 
     <ImageView
-        android:src="@drawable/pokemon"
         android:id="@+id/album_view"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_below="@id/artist_view"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/pokemon" />
 
     <TextView
         android:id="@+id/song_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/album_view"
-        android:text="@string/current_song"
-        android:textSize="20sp"
-        android:textColor="#000"
-        android:textAlignment="center"
         android:fontFamily="serif"
-        android:padding="5dp"/>
+        android:padding="5dp"
+        android:text="@string/current_song"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/control_border"
@@ -141,40 +150,40 @@
         android:layout_height="1dp"
         android:layout_above="@+id/control_panel"
         android:layout_marginTop="25dp"
-        android:background="@color/divider_color"/>
+        android:background="@color/divider_color" />
 
     <LinearLayout
         android:id="@+id/control_panel"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
 
         <ImageView
             android:id="@+id/rewind_button"
-            android:src="@drawable/rewind"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:tint="@color/icon_color"/>
+            android:src="@drawable/rewind"
+            android:tint="@color/icon_color" />
 
         <ImageView
             android:id="@+id/play_button"
-            android:src="@drawable/play"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:tint="@color/icon_color"/>
+            android:src="@drawable/play"
+            android:tint="@color/icon_color" />
 
         <ImageView
             android:id="@+id/fast_forward_button"
-            android:src="@drawable/fast_forward"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:tint="@color/icon_color"/>
+            android:src="@drawable/fast_forward"
+            android:tint="@color/icon_color" />
 
     </LinearLayout>
 

@@ -1,11 +1,20 @@
 <resources>
     <string name="app_name">MusicApp</string>
 
+    <!-- Labels -->
+    <string name="radio">Radio</string>
+    <string name="store">Store</string>
+    <string name="library">Library</string>
+    <string name="home">Home</string>
+
     <!-- Menu bar strings -->
     <string name="library_button">Library</string>
     <string name="radio_button">Radio</string>
     <string name="store_button">Store</string>
     <string name="home_button">Home</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="search">Search</string>
 
     <!-- Main activity strings-->
     <string name="current_artist">Caleb and the Pocket Monsters</string>
